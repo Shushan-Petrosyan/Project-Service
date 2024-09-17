@@ -1,0 +1,289 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    height: 70px;
+    background-color: #fff;
+    line-height: 70px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.title{
+    font-size: 28px;
+}
+.mobile-section{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* a:hover + div {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    color: orange;
+    left: 0;
+    width: 30%;
+} */
+ .container23 {
+    position: fixed;
+    top: 40px;  
+    left: 0;
+    height: fit-content;
+}
+
+.hidden-div {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    left: 0;
+    top: 0;
+    width: 300px;
+}
+
+
+.container23:hover .hidden-div {
+    display: block;
+}
+.hidden-div p > a{
+    font-size: 18px;
+    text-align: justify;
+    text-decoration: none;
+    color: black;
+    padding: 10px !important;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+.flex-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.flex-container12 {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.flex-container12 > div {
+    margin: 10px;
+    font-size: 30px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.title-tablets{
+    display: none;
+}
+.w-50{
+    width: 100%;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 25%;
+    box-sizing: border-box;
+}
+.only-tablet{
+    display: none;
+}
+
+.pl-50{
+    padding-left: 50px !important;
+}
+
+.right{
+    text-align: right !important;
+}
+.left{
+    text-align: left !important;
+}
+.w-50{
+    width: 100% !important;
+}
+.w-20{
+    width: 100% !important;
+   
+}
+.flex-container p{
+    font-size: 14px;
+}
+.mt-5{
+    margin-top: 50px;
+}
+.pl-10{
+    padding-left: 100px;
+}
+.w-200px{
+    height: 40px;
+    line-height: 40px;
+ 
+}
+.float-left{
+    float: left;
+    width: 48%;
+}
+.bg-white{
+    background-color: white;
+}
+
+.border-none{
+   
+    border: 0;
+}
+/*.border-cyan{*/
+/*    border: 2px solid cyan;*/
+/*}*/
+
+.border-color {
+    width: 248px;
+    height: 40px;
+    border: 3px solid aqua;
+}
+
+
+
+.w-100{
+    width: 100%;
+}
+.header-icons{
+    float: right;
+}
+.header-icons span{
+    font-size: 16px;
+    margin-top: -50px !important;
+}
+.clear{
+    clear: both;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .flex-container > div {
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        width: 100%;
+    }
+        .title{
+        display: none !important;
+    }
+
+    .float-left{
+        width: 46%;
+       
+        margin-right: 4%;
+        font-size: 14px;
+        float: left;
+    }
+    .content-image {
+        float: left;
+    }
+  
+    .only-tablet{
+        display: block;
+    }
+    .w-20{
+        width: 100% !important;
+    }
+
+    .only-pc{
+        display: none;
+        font-size: 16px;
+    }
+    .header-icons span{
+        display: none;
+    }
+    .flex-container12 > div {
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 930px) {
+
+    .float-left{
+        width: 96%;
+        margin-right: 4%;
+    }
+    .w-100{
+        width: 100% !important;
+    }
+    .block{
+        display: block !important;
+    }
+.mobile-flex{
+    display: block !important;
+    width: 100% !important;
+}
+/*.flex-container{*/
+/*    width: 100%;*/
+/*}*/
+.w-20{
+    width: 100% !important;
+}
+.mobile{
+display: none;
+}
+.mobile-section{
+    margin-top: 25px !important;
+}
+    .pl-50{
+        padding-left: 0 !important;
+    }
+    .flex-container12{
+        width: 100%;
+        padding: 0;
+    }
+    .flex-container12 > div {
+        width: 100%; /* Adjust width on smaller screens */
+        padding: 0;
+    }
+    .title-tablets{
+        display: block;
+    }
+}
+
+    .flex-container12{
+        width: 100%;
+        padding: 0;
+    }
+    .flex-container12 > div {
+        width: 100%; /* Adjust width on smaller screens */
+        padding: 0;
+    }
+
+@media (max-width: 768px) {
+    .flex-container12{
+        width: 100%;
+        padding: 0;
+        gap: 1px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex-container12 > div {
+        width: 100%; /* Adjust width on smaller screens */
+        overflow-x: hidden;
+    }
+
+    .title-tablets{
+        display: block;
+    }
+}
