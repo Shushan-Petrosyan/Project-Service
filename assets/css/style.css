@@ -1,14 +1,70 @@
-html , body {
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.carousel {
+    /* position: relative; */
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px; 
+    background-color: #fff;
+}
+.active-link{
+    display: none;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
     width: 100%;
 }
+
+.carousel-item {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.button {
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* old */
+
 header{
     height: 70px;
     background-color: #fff;
     line-height: 70px;
     padding: 0 !important;
     margin: 0 !important;
+}
+.mobile-icons{
+    display: none;
 }
 .title{
     font-size: 28px;
@@ -18,9 +74,6 @@ header{
     margin: 0 !important;
 }
 
-.hidden-div p {
-    text-align: center;
-}
  .container23 {
     position: fixed;
     top: 40px;  
@@ -28,10 +81,14 @@ header{
     height: fit-content;
 }
 
+.carousel-content{
+    display: none;
+}
+
 .hidden-div {
     display: none;
     position: absolute;
-    z-index: 10;
+    z-index: 99999;
     background-color: white;
     color: black;
     left: 0;
@@ -50,9 +107,7 @@ header{
     gap: 10px; 
 }
 .container-grid img {
-    width: 50%;
-    padding-left: 30px;
-    height: auto;
+    width: 40px;
 }
 .active-link{
     border-left: 10px solid aqua;
@@ -61,20 +116,19 @@ header{
 .active-text{
     color: #bebec1 !important;
 }
-
-.container23:hover .hidden-div {
-    display: block;
+.mobile {
+    display: none;
 }
+
+/* .container23:hover .hidden-div {
+    display: block;
+} */
 .hidden-div p > a{
     font-size: 18px;
     text-align: justify;
     text-decoration: none;
     color: black;
     padding: 10px !important;
-}
-
-.mobile-menu {
-    display: none;
 }
 
 
@@ -160,9 +214,6 @@ header{
    
     border: 0;
 }
-/*.border-cyan{*/
-/*    border: 2px solid cyan;*/
-/*}*/
 
 .border-color {
     width: 248px;
@@ -187,8 +238,118 @@ header{
     height: 50px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1000px) {
 
+
+    .hidden-mobile{
+        display: none;
+    }
+
+    .active-text{
+        color: #bebec1;
+    }
+
+    .float-left{
+        width: 96%;
+        margin-right: 4%;
+    }
+    .w-100{
+        width: 100% !important;
+    }
+    .block{
+        display: block !important;
+    }
+    .mobile-flex{
+        display: block !important;
+        width: 100% !important;
+    }
+    .w-20{
+        width: 100% !important;
+    }
+    .mobile{
+    display: none;
+    }
+    .mobile-section{
+        margin-top: 25px !important;
+    }
+    .pl-50{
+        padding-left: 0 !important;
+    }
+    .flex-container12{
+        width: 100%;
+        padding: 0;
+    }
+    .flex-container12 > div {
+        width: 100%;
+        padding: 0;
+    }
+    .title-tablets{
+        display: block;
+    }
+    /* .mobile-icons{
+        display: none;
+    } */
+    .carousel {
+        /* position: relative; */
+        width: 1000px;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 5px; 
+        background-color: #fff;
+    }
+    
+    .carousel-content {
+        margin-top: 100px;
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+    }
+    
+    .carousel-item {
+        min-width: 30%;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .button {
+        /* position: absolute; */
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .mobile-icons{
+        display: block;
+    }
+    .only-tablet{
+        display: block;
+    }
+
+    .hidden{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+}
+
+
+/* end old */
+@media (max-width: 600px) {
     .flex-container > div {
         margin: 10px;
         padding: 20px;
@@ -230,76 +391,80 @@ header{
         font-size: 30px;
         width: 50%;
     }
+    .mobile-icons{
+        display: none;
+    }
 
-}
+        .carousel{
+            margin-top:200px;
+        }
+    
+    .button {
+        padding: 8px; /* Уменьшаем размер кнопок на мобильных устройствах */
+    }
 
-@media only screen and (max-width: 930px) {
-
+    .carousel-item {
+        font-size: 20px; /* Уменьшаем размер шрифта на мобильных */
+    }
+    .carousel-content{
+        display: flex;
+    }
+    .hidden-mobile{
+        display: none !important;
+    }
     .float-left{
-        width: 96%;
-        margin-right: 4%;
-    }
-    .w-100{
-        width: 100% !important;
-    }
-    .block{
-        display: block !important;
-    }
-.mobile-flex{
-    display: block !important;
-    width: 100% !important;
-}
-.w-20{
-    width: 100% !important;
-}
-.mobile{
-display: none;
-}
-.mobile-section{
-    margin-top: 25px !important;
-}
-    .pl-50{
-        padding-left: 0 !important;
-    }
-    .flex-container12{
         width: 100%;
-        padding: 0;
+        padding: 0px;
+        margin: 0;
     }
-    .flex-container12 > div {
-        width: 100%;
-        padding: 0;
+    .p-20{
+        padding: 20px;
     }
-    .title-tablets{
-        display: block;
-    }
+    .carousel {
+    /* position: relative; */
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px; 
+    background-color: #fff;
 }
 
-    .flex-container12{
-        width: 100%;
-        padding: 0;
-    }
-    .flex-container12 > div {
-        width: 100%; /* Adjust width on smaller screens */
-        padding: 0;
-    }
-
-@media (max-width: 768px) {
-    .flex-container12{
-        width: 100%;
-        padding: 0;
-        gap: 1px;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .flex-container12 > div {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .title-tablets{
-        display: block;
-    }
-    .hidden-div p {
-        text-align: center;
-    }
+.carousel-content {
+    margin-top: 100px;
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
 }
+
+.carousel-item {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.button {
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+}
+
+
+
