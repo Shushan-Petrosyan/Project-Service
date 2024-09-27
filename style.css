@@ -1,0 +1,267 @@
+.page {
+    position: relative;
+    margin: auto;
+    max-width: 1120px;
+}
+.page-header {
+    display: flex   ;
+    align-items: center;
+    width: 100%;
+     padding: 18px 16px;
+   /* @media screen and  (min-width: 320px) {
+        padding: 8px 24px;
+    }*/
+  
+}
+.burger {
+   /*display: flex; */
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    min-width: 70px;
+ 
+}
+@media screen and (min-width:768px) {
+    .logo::before {
+        display: block;
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        content:"";
+        margin-right: 20px;
+    }
+    
+
+
+
+
+}
+.user-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 16px;
+    list-style: none;
+
+}
+.user-menu::before {
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    content:"";
+}
+
+.user-menu__item {
+    margin-left: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+.social-btns {
+    display: flex;
+    list-style: none;
+    @media screen and  (max-width: 767px) {
+        display: none;
+
+       
+        
+
+
+
+    }
+}
+.social-btns__item {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+}
+@media screen and (min-width:1120px) {
+    header {
+        display: none;
+    }
+}
+
+.page-main {
+    width: 1120;
+    height: 535px;
+}
+
+.page-main__header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+     padding: 18px 16px;
+}
+.main-title {
+    font-size: 28px;
+}
+.page-main__user-menu{
+    display: flex;
+ margin: 0;
+    padding-left: 500px;
+    list-style: none;
+}
+
+@media screen and (max-width:1119px) {
+         .page-main__user-menu__item {
+            display: none;
+         }
+         .icons {
+            display: none;
+         }
+
+         .page-main__navigation {
+            overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-snap-type: x mandatory; 
+         }
+         .page-main__navigation {
+            display: inline-flex; 
+        }
+
+.navigation-item {
+    min-width: 200px;
+   
+    margin: 10px;
+ 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    scroll-snap-align: start; 
+}
+
+         .about-us__text {
+           max-width: 328px;
+            max-height: 160px;
+         }
+
+
+         .main-title {
+            width: 100% !important;
+            font-size: 25px;
+         }
+        .navigation-item {
+            font-size: 12px;
+        }
+        .content{
+            width: 100%;
+        }
+       
+      .content-image  {
+        display: block;
+        margin-left: 400px !important;
+        width:360px !important;
+        height: 260px !important;
+        margin-top: -160px !important;
+        /* height: 208px; */
+      }
+   
+     .icon {
+        margin-top: 70px;
+     }
+
+}
+.page-main__navigation {
+    display: flex;
+
+    list-style: none;
+}
+
+ .button1 {
+    width: 233px;
+    height: 40px;
+    border: medium solid #B8FFEC;
+    text-align: center;
+ }
+
+.navigation-item {
+    margin: 3px;
+    margin-right: 20px;
+
+}
+
+.navigation-link {
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.otziv {
+    position: relative;
+    top: 50px;
+    left: -900px;
+}
+
+
+.about-us__text {
+    width: 490px;
+    height: 200px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 30px;
+    line-height: 20px;
+    color: #1B1C21;
+}
+
+.content {
+    width: 490px;
+    height: 160px;
+}
+.content-image {
+    width: 531px;
+    height: 307px;
+      margin-left: 600px;
+      margin-top: -150px;
+   }
+
+.icn {
+    margin-top: -150px;
+
+    width: 300px;
+    height: 24px;
+ 
+}
+.icon {
+    margin-left: 35px;
+ 
+}
+.icon-text {
+    margin-left: 80px;
+    top: -100px;
+}
+
+/*@media screen and (max-width:768px) {
+    .main-title {
+        width: 200px;
+        font-size: 15px;
+    }
+    .content-image {
+        margin-top: 400px;
+        margin-left: -600px;
+    }
+}
+@media screen and (max-width:1112px) {
+    .page-main__navigation {
+        overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+    }
+}*/
+   
+@media screen and (max-width:767px) {
+ 
+    
+    .content-image {
+        margin-left:20px !important;
+        margin-top: 150px !important;
+    }
+    div{
+        max-width: 300px !important;
+    }
+}
