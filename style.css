@@ -3,7 +3,7 @@
     margin: auto;
     max-width: 1120px;
 }
-.page-header {
+header {
     display: flex   ;
     align-items: center;
     width: 100%;
@@ -261,7 +261,7 @@
         margin-left:20px !important;
         margin-top: 150px !important;
     }
-    div{
+    /* div{
         max-width: 300px !important;
-    }
+    } */
 }
